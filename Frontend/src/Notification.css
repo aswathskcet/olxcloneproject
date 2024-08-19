@@ -1,0 +1,51 @@
+/* src/Notification.css */
+.notification {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px; /* Match the width of the sidebar */
+    height: 100%; /* Full height */
+    background-color: #FFFF00; /* Yellow background */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    transform: translateX(100%); /* Initially hidden off-screen */
+    z-index: 1000; /* Ensure it appears above other content */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the start */
+  }
+  
+  .notification.open {
+    transform: translateX(0); /* Slide in the sidebar */
+  }
+  
+  .notification-close-btn {
+    align-self: flex-end;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .notification-content {
+    flex: 1;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .notification-btn-container {
+    margin-top: auto; /* Push button container to the bottom */
+    padding-top: 10px; /* Adjust to move the button up from the content above */
+  }
+  
+  .notification-btn {
+    background-color: #000; /* Black background for button */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 4px;
+    padding: 15px; /* Increase padding for a wider button */
+    cursor: pointer;
+    width: 100%; /* Make the button full width of the container */
+  }
+  

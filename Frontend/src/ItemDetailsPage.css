@@ -1,0 +1,70 @@
+/* Full page width container */
+.item-details-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Light background color for the page */
+  padding: 20px;
+}
+
+/* Center the item details container and limit its maximum width */
+.item-details-container {
+  width: 100%;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Background color for the inner container */
+  border-radius: 8px;
+}
+
+/* Center the image and adjust size */
+.item-image-large {
+  display: block;
+  margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
+  width: auto; /* Adjust width to fit container */
+  max-width: 100%; /* Ensure it does not exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Outer box containing all the input fields */
+.details-outer-box {
+  display: flex;
+  flex-wrap: wrap; /* Wrap input boxes to new rows */
+  gap: 15px; /* Space between input boxes */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9; /* Background color for the outer box */
+}
+
+/* Style for individual input boxes */
+.details-input-box {
+  flex: 1 1 calc(33.333% - 15px); /* Three boxes per row with space */
+  min-width: 180px; /* Minimum width for responsiveness */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff; /* Background color for the inner box */
+}
+
+/* Style for labels and input fields */
+.details-input-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.details-input-box input,
+.details-input-box textarea {
+  width: 95%; /* Make input fields full width */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.details-input-box textarea {
+  height: 100px;
+  resize: none;
+}

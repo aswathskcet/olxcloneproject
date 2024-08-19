@@ -1,0 +1,42 @@
+/* AboutPage.css */
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0a47b; /* Light cyan background color */
+    padding: 20px;
+  }
+  
+  .about-box {
+    background-color: #fff; /* White background for the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 20px;
+    max-width: 800px; /* Maximum width of the box */
+    width: 100%; /* Full width up to max-width */
+  }
+  
+  .about-box h1 {
+    color: #333; /* Dark gray color for the heading */
+  }
+  
+  .about-box h2 {
+    color: #555; /* Medium gray color for subheadings */
+  }
+  
+  .about-box p {
+    line-height: 1.6; /* Improved readability with line spacing */
+    color: #666; /* Gray color for text */
+  }
+  
+  .about-box ul {
+    list-style-type: disc; /* Disc bullets for the list */
+    margin-left: 20px; /* Indent the list */
+  }
+  
+  .about-box li {
+    margin-bottom: 10px; /* Space between list items */
+  }
+  

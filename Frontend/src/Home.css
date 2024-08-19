@@ -1,0 +1,66 @@
+/* src/Home.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #000; /* Black background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* Ensuring the title text is visible on black background */
+}
+
+.search-bar {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #fff; /* Changed to white for better visibility on black background */
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Pushes the icons to the far right */
+  margin-right: 30px;
+}
+
+.nav-icon {
+  cursor: pointer;
+  font-size: 1.5rem; /* Adjust size if needed */
+  color: #fff; /* Ensure icon is visible */
+}
+.lottie{
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  right: 20%;
+}

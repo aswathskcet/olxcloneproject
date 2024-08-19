@@ -1,0 +1,77 @@
+/* Container for the entire products page */
+.my-products-page-wrapper {
+  background-color: rgba(145, 3, 119, 0.979); /* Pale Green background for the entire page */
+  min-height: 100vh;
+  padding: 0 0px; /* Adjust padding to fit the content */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation bar */
+.my-products-navbar {
+  width: 100%;
+  background-color: #020b12; /* Black background */
+  padding: 10px 0; /* Padding for smaller height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.my-products-title {
+  color: white; /* White text color */
+  font-size: 1.5em; /* Font size for title */
+  font-weight: bold;
+}
+
+/* Flex container for products */
+.my-products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Style for individual items */
+.item-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  width: 200px; /* Adjust width as needed */
+  position: relative; /* To position the Remove button */
+  background-color: #74a0b18b; /* Background color for each item */
+}
+
+/* Style for item image */
+.item-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Style for item title */
+.item-title {
+  margin-top: 8px;
+  font-size: 1.2em;
+}
+
+.favorite-icon {
+  margin-top: 8px;
+}
+
+.remove-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.remove-button:hover {
+  background-color: darkred;
+}

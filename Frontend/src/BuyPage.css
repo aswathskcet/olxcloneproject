@@ -1,0 +1,74 @@
+/* Container for the entire buy page */
+.buy-page-wrapper {
+  background-color: rgba(159, 168, 159, 0.89) !important; /* Pale Green */
+  min-height: 100vh;
+  padding: 0 20px; /* Adjust padding to fit the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally */
+}
+
+/* Navigation bar */
+.buy-page-navbar {
+  width: 110%; /* Full width of the page */
+  background-color: #000000; /* Black background color */
+  padding: 5px 0; /* Reduced padding for a smaller height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px; /* Adjust margin to move navbar slightly up */
+  margin-bottom: 20px;
+}
+
+.buy-page-title {
+  color: white; /* White text color */
+  font-size: 1.5em; /* Font size */
+  font-weight: bold;
+}
+
+/* Flex container for items */
+.buy-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Style for individual items */
+.item-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  width: 200px; /* Adjust as needed */
+  cursor: pointer;
+  background-color: #3159698b; /* Background color for each item */
+  position: relative; /* For positioning the favorite icon */
+}
+
+/* Style for item image */
+.item-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Style for item title */
+.item-title {
+  margin-top: 8px;
+  font-size: 1.2em;
+}
+
+/* Style for the favorite icon */
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: gray;
+}
+
+/* Style for the heart icon when favorited */
+.favorite-icon.favorited {
+  color: red;
+}

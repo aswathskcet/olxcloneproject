@@ -1,0 +1,68 @@
+/* Ensure the entire app container takes up full height and has a sky blue background */
+.app-container {
+  background-color: skyblue;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation bar styles */
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 15px 20px; /* Increased padding for more height */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's on top of other content */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute space between elements */
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-content .title {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.nav-content .search-bar {
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.nav-content .nav-links {
+  display: flex;
+  gap: 20px; /* Spacing between links */
+}
+
+.nav-content .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav-content .icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push icons to the right side */
+}
+
+.nav-content .bell-icon {
+  color: white;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.nav-content .user-icon {
+  color: white;
+  margin-left: 20px; /* Space before the user icon */
+  font-size: 1.2rem;
+}
